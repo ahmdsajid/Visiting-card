@@ -33,7 +33,7 @@ class Home extends StatelessWidget {
             ),
             Container(
               height: 80,
-              width: 300,
+              width: 350,
               decoration: BoxDecoration(
                   color: Colors.white, borderRadius: BorderRadius.circular(25)),
               child: Column(
@@ -42,9 +42,25 @@ class Home extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Icon(Icons.phone),
-                      Icon(Icons.mail),
-                      Icon(Icons.facebook),
+                      Column(
+                        children: [
+                          Icon(Icons.phone,size: 35,),
+                          Text("Phone",style: TextStyle(fontSize: 15),),
+                          
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          Icon(Icons.mail,size: 35,),
+                          Text("Mail",style: TextStyle(fontSize: 15),)
+                        ],
+                      ),
+                      Column(
+                        children: [
+                          Icon(Icons.facebook,size: 35,),
+                          Text("Facebook",style: TextStyle(fontSize: 15),)
+                        ],
+                      ),
                     ],
                   )
                 ],
@@ -54,9 +70,9 @@ class Home extends StatelessWidget {
               height: 30,
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 40),
+              padding: const EdgeInsets.only(left: 25,right: 25),
               child: Text(
-                "Hello I am Mahmudul Sajid.I am a flutter developer. I am interested in coding.",
+                "Hello I am Mahmudul Sajid. I am a flutter developer. I am interested in coding. I also love to playing football and travelling.",
                 style: GoogleFonts.poppins(
                     fontSize: 15, fontWeight: FontWeight.bold),
               ),
